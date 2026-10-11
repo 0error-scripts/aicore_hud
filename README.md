@@ -4,6 +4,9 @@
 
 Shows UI elements such as health, hunger, thirst, etc.
 
+> 💬 **Need help or want to support Aicore?** Join our Discord: [https://discord.gg/xfQFcWjak](https://discord.gg/xfQFcWjak)
+
+
 ## Custom indicators
 
 Client resources can add circular indicators alongside the player HUD:
