@@ -292,3 +292,35 @@ altitude {
   font-weight: 600;
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.6);
 }
+
+/* ================= AICORE HUD REDESIGN ================= */
+/* Brand accent: #49c59a. All Vue bindings / NUI contract untouched. */
+
+/* Status cluster (bottom-left) */
+#playerHud { position: absolute; left: 1.8vw; bottom: 2.4vh; display: flex; align-items: center; z-index: 5; }
+.ring-wrap { margin-left: -8px; }
+.ring-wrap:first-child { margin-left: 0; }
+.aicore-ring { position: relative; border-radius: 50%; background: rgba(6,10,12,.62); box-shadow: 0 3px 12px rgba(0,0,0,.5), inset 0 0 0 1px rgba(255,255,255,.07); }
+.aicore-ring::before { content: ""; position: absolute; inset: 6px; border-radius: 50%; border: 2px solid rgba(255,255,255,.13); pointer-events: none; }
+.aicore-ring svg { position: relative; filter: drop-shadow(0 0 3px currentColor); }
+.aicore-ring .q-circular-progress__text { text-shadow: 0 1px 3px rgba(0,0,0,.8); }
+
+/* Money pills (top-right) */
+#money-container { position: absolute; right: 1.8vw; top: 2.6vh; display: flex; flex-direction: column; align-items: flex-end; gap: 6px; font-size: 30px; }
+#money-cash p, #money-bank p { margin: 0; background: rgba(6,10,12,.62); border: 1px solid rgba(255,255,255,.08); border-radius: 10px; padding: 2px 14px 5px; box-shadow: 0 3px 12px rgba(0,0,0,.45); }
+#sign { color: #49c59a; }
+#money-change p { margin: 0; background: rgba(6,10,12,.62); border: 1px solid rgba(255,255,255,.08); border-radius: 10px; padding: 2px 14px 5px; font-size: 30px; box-shadow: 0 3px 12px rgba(0,0,0,.45); }
+
+/* Compass: brand pointer */
+.pointer { color: #49c59a; }
+
+/* Vehicle cluster: gauges keep their original .responsive absolute positioning */
+.text-gauge { color: #49c59a !important; }
+#speedometer .q-circular-progress svg, #fuelgauge .q-circular-progress svg, #seatbelt .q-circular-progress svg { filter: drop-shadow(0 0 4px rgba(73,197,154,.5)); }
+speed { font-size: 3vh; }
+
+/* Settings menu: brand accents */
+.bg-bgbutton { background: #49c59a !important; }
+.text-textbutton { color: #06281d !important; }
+.text-checkbox { color: #49c59a !important; }
+.q-checkbox__inner--truthy .q-checkbox__bg { box-shadow: 0px 0px 3px 3px rgb(73 197 154 / 18%) !important; }
