@@ -1,4 +1,4 @@
-lib.versionCheck('0error-scripts/aicore_hud')
+lib.versionCheck('aicore-fivem/aicore_hud')
 
 local config = require 'config.server'
 local sharedConfig = require 'config.shared'

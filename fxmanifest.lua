@@ -2,7 +2,7 @@ fx_version 'cerulean'
 game 'gta5'
 
 description 'HUD for Aicore'
-repository 'https://github.com/0error-scripts/aicore_hud'
+repository 'https://github.com/aicore-fivem/aicore_hud'
 version '0.1.0'
 
 ox_lib 'locale'
